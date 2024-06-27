@@ -29,6 +29,13 @@
       "fileMatch": ["^config\/jobs\/.+\\.yaml$"],  
       "matchStrings": ["image(: |=)(?<depName>.*?):(?<currentValue>.*?)\\s"],  
       "datasourceTemplate": "docker"  
+    },
+    {
+      // Generic detection for container images to be copied.
+      "customType": "regex",
+      "fileMatch": ["^config\/images\/images\\.yaml$"],
+      "matchStrings": ["\\s+source:\\s+(?<depName>.+?)\\n\\s+destination:\\s+.*\\n\\s+tags:\\n(\\s+-\\s+v?[0-9][0-9a-zA-Z\\-\\.]*\\n)*\\s+-\\s+(?<currentValue>.+?)\\n"],
+      "datasourceTemplate": "docker"
     }
   ],
   "separateMinorPatch": true,
@@ -99,6 +106,32 @@
       "matchUpdateTypes": ["major", "minor"],
       "matchPackagePatterns": ["grafana/grafana"],
       "enabled": false
+    },
+    {
+      // Pin certain components to the current minor version.
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["major", "minor"],
+      "matchPackagePatterns": [
+        "coredns/coredns",
+        "calico/node",
+        "calico/cni",
+        "calico/kube-controllers",
+        "calico/pod2daemon-flexvol",
+        "k8scloudprovider/openstack-cloud-controller-manager",
+        "k8scloudprovider/cinder-csi-plugin",
+        "nginx",
+      ],
+      "enabled": false
+    },
+    {
+      "matchFileNames": ["config/images/images.yaml"],
+      "postUpgradeTasks": {
+        "commands": [
+          "bash -c export >> output",
+          "echo depName={{{depName}}} currentVersion={{{currentVersion}}} newVersion={{{newVersion}}}",
+        ],
+        "executionMode": "update"
+      }
     }
   ]
 }
