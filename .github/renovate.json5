@@ -128,7 +128,7 @@
       "postUpgradeTasks": {
         "commands": [
           "bash -c export >> output",
-          "echo depName={{{depName}}} currentVersion={{{currentVersion}}} newVersion={{{newVersion}}}",
+          "bash -c echo depName={{{depName}}} currentVersion={{{currentVersion}}} newVersion={{{newVersion}}} >> output",
         ],
         "executionMode": "update"
       }
