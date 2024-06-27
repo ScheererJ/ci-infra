@@ -1,0 +1,8 @@
+declare -x CONTAINERBASE_CACHE_DIR="/var/folders/dn/zw27gxm56h7gj2z0jvymqd5h0000gn/T/renovate/cache/containerbase"
+declare -x HOME="/Users/d050052"
+declare -x LANG="de_DE.UTF-8"
+declare -x OLDPWD
+declare -x PATH="/opt/homebrew/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/opt/gnu-sed/libexec/gnubin:/opt/homebrew/opt/gnu-tar/libexec/gnubin:/opt/homebrew/opt/grep/libexec/gnubin:/opt/homebrew/share/google-cloud-sdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Applications/Privileges.app/Contents/Resources:/Applications/Wireshark.app/Contents/MacOS:/Applications/iTerm.app/Contents/Resources/utilities:/Users/d050052/go/bin:/usr/local/opt/openvpn/sbin:/Users/d050052/.krew/bin:/Applications/Visual\\ Studio\\ Code.app/Contents/Resources/app/bin:/Users/d050052/Library/Python/3.10/bin"
+declare -x PWD="/private/var/folders/dn/zw27gxm56h7gj2z0jvymqd5h0000gn/T/renovate/repos/github/scheererj/ci-infra"
+declare -x SHLVL="2"
+declare -x _="/opt/homebrew/bin/bash"
