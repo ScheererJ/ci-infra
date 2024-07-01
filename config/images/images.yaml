@@ -1,220 +1,440 @@
+- v1.30.1
 images:
+- v1.30.1
 # gardener/imagevector/images.yaml
+- v1.30.1
 #
+- v1.30.1
 # DO NOT ADD NEW GRAFANA IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener/pull/7318 grafana is replaced by plutono.
+- v1.30.1
 - source: grafana/grafana
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/grafana
+- v1.30.1
   tags:
+- v1.30.1
   - 7.5.17
+- v1.30.1
 # DO NOT ADD NEW COREDNS IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener/pull/8192 a GCR copy image is no longer used for coredns.
+- v1.30.1
 - source: coredns/coredns
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/coredns/coredns
+- v1.30.1
   tags:
+- v1.30.1
   - 1.10.0
+- v1.30.1
 - source: kubernetesui/dashboard
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubernetesui/dashboard
+- v1.30.1
   tags:
+- v1.30.1
   - v2.2.0
+- v1.30.1
   - v2.4.0
+- v1.30.1
   - v2.5.1
+- v1.30.1
 - source: kubernetesui/metrics-scraper
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubernetesui/metrics-scraper
+- v1.30.1
   tags:
+- v1.30.1
   - v1.0.7
+- v1.30.1
 - source: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy-target
+- v1.30.1
   tags:
+- v1.30.1
   - "v0.15.0"
+- v1.30.1
 - source: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack-target
+- v1.30.1
   tags:
+- v1.30.1
   - 3.18.4
+- v1.30.1
   - 3.19.0
+- v1.30.1
 - source: alpine
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/alpine
+- v1.30.1
   tags:
+- v1.30.1
   - 3.15.4
+- v1.30.1
   - 3.15.8
+- v1.30.1
   - 3.18.4
+- v1.30.1
   - 3.19.1
+- v1.30.1
 # DO NOT ADD NEW FLUENT/FLUENT-BIT IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener/pull/7568 the fluent/fluent-bit image is replaced by kubesphere/fluent-bit.
+- v1.30.1
 - source: fluent/fluent-bit
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent/fluent-bit
+- v1.30.1
   tags:
+- v1.30.1
   - 1.9.7
+- v1.30.1
 - source: kubesphere/fluent-bit # A custom Fluent Bit image `kubesphere/fluent-bit` is required to work with FluentBit Operator for dynamic configuration reloading, ref: https://github.com/fluent/fluent-operator#fluent-bit
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubesphere/fluent-bit
+- v1.30.1
   tags:
+- v1.30.1
   - v2.0.9
+- v1.30.1
   - v2.0.10
+- v1.30.1
   - v2.1.4
+- v1.30.1
   - v2.2.0
+- v1.30.1
   - v2.2.2
+- v1.30.1
 - source: ghcr.io/fluent/fluent-operator/fluent-bit # A custom Fluent Bit image is required to work with FluentBit Operator for dynamic configuration reloading, ref: https://github.com/fluent/fluent-operator#fluent-bit It follows the switch in the upstream fluent-operator project. The kubsphere/fluent-bit image shall not be used anymore.
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent-operator/fluent-bit
+- v1.30.1
   tags:
+- v1.30.1
   - v3.0.7
+- v1.30.1
 - source: kubesphere/fluent-operator
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubesphere/fluent-operator
+- v1.30.1
   tags:
+- v1.30.1
   - v1.7.0
+- v1.30.1
   - v2.2.0
+- v1.30.1
   - v2.3.0
+- v1.30.1
   - v2.7.0
+- v1.30.1
 # It follows the switch in the upstream fluent-operator project. The kubsphere/fluent-operator image shall not be used anymore.
+- v1.30.1
 - source: ghcr.io/fluent/fluent-operator/fluent-operator
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent-operator/fluent-operator
+- v1.30.1
   tags:
+- v1.30.1
   - v2.9.0
+- v1.30.1
 # DO NOT ADD NEW LOKI IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener/pull/7318 loki is replaced by vali.
+- v1.30.1
 - source: grafana/loki
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/loki
+- v1.30.1
   tags:
+- v1.30.1
   - 2.2.1
+- v1.30.1
 # DO NOT ADD NEW PROMTAIL IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener/pull/7318 promtail is replaced by valitail.
+- v1.30.1
 - source: grafana/promtail
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/promtail
+- v1.30.1
   tags:
+- v1.30.1
   - 2.2.1
+- v1.30.1
 - source: envoyproxy/envoy
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy
+- v1.30.1
   tags:
+- v1.30.1
   - v1.24.1
+- v1.30.1
   - v1.26.4
-  - v1.30.1
+- v1.30.1
+  - v1.30.4
+- v1.30.1
 - source: envoyproxy/envoy-distroless
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
+- v1.30.1
   tags:
+- v1.30.1
   - v1.24.1
+- v1.30.1
   - v1.26.4
+- v1.30.1
   - v1.26.7
+- v1.30.1
   - v1.29.2
+- v1.30.1
   - v1.29.3
+- v1.30.1
   - v1.30.1
+- v1.30.1
   - v1.30.2
+- v1.30.1
   - v1.30.3
+- v1.30.1
 - source: ghcr.io/credativ/vali
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/credativ/vali
+- v1.30.1
   tags:
+- v1.30.1
   - v2.2.13
+- v1.30.1
   - v2.2.14
+- v1.30.1
   - v2.2.15
+- v1.30.1
   - v2.2.16
+- v1.30.1
 - source: ghcr.io/credativ/valitail
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/credativ/valitail
+- v1.30.1
   tags:
+- v1.30.1
   - v2.2.13
+- v1.30.1
   - v2.2.14
+- v1.30.1
   - v2.2.15
+- v1.30.1
   - v2.2.16
+- v1.30.1
 - source: ghcr.io/credativ/plutono
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/credativ/plutono
+- v1.30.1
   tags:
+- v1.30.1
   - v7.5.28
+- v1.30.1
   - v7.5.29
+- v1.30.1
   - v7.5.30
+- v1.30.1
   - v7.5.31
+- v1.30.1
 # gardener/pkg/provider-local/images.yaml
+- v1.30.1
 - source: kindest/local-path-provisioner
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kindest/local-path-provisioner
+- v1.30.1
   tags:
+- v1.30.1
   - v0.0.22-kind.0
+- v1.30.1
 - source: kindest/local-path-helper
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kindest/local-path-helper
+- v1.30.1
   tags:
+- v1.30.1
   - v20220512-507ff70b
+- v1.30.1
 # gardener/test (Gardener integration tests)
+- v1.30.1
 - source: redis
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/redis
+- v1.30.1
   tags:
+- v1.30.1
   - 5.0.8
+- v1.30.1
 # gardener-extension-networking-calico/charts/images.yaml
+- v1.30.1
 #
+- v1.30.1
 # DO NOT ADD NEW CALICO IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener-extension-networking-calico/pull/275 GCR copy images are no longer used for the calico images.
+- v1.30.1
 - source: calico/node
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/node
+- v1.30.1
   tags:
+- v1.30.1
   - v3.25.1
+- v1.30.1
   - v3.25.0
+- v1.30.1
   - v3.22.2
+- v1.30.1
 - source: calico/cni
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/cni
+- v1.30.1
   tags:
+- v1.30.1
   - v3.25.1
+- v1.30.1
   - v3.25.0
+- v1.30.1
   - v3.22.2
+- v1.30.1
 - source: calico/typha
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/typha
+- v1.30.1
   tags:
+- v1.30.1
   - v3.25.1
+- v1.30.1
   - v3.25.0
+- v1.30.1
   - v3.22.2
+- v1.30.1
 - source: calico/kube-controllers
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/kube-controllers
+- v1.30.1
   tags:
+- v1.30.1
   - v3.25.1
+- v1.30.1
   - v3.25.0
+- v1.30.1
   - v3.22.2
+- v1.30.1
 - source: calico/pod2daemon-flexvol
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/pod2daemon-flexvol
+- v1.30.1
   tags:
+- v1.30.1
   - v3.22.2
+- v1.30.1
 # gardener-extension-provider-aws/imagevector/images.yaml
+- v1.30.1
 - source: public.ecr.aws/eks/aws-load-balancer-controller
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/eks/aws-load-balancer-controller
+- v1.30.1
   tags:
+- v1.30.1
   - v2.6.1
+- v1.30.1
   - v2.7.1
+- v1.30.1
 - source: public.ecr.aws/ebs-csi-driver/volume-modifier-for-k8s
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/ebs-csi-driver/volume-modifier-for-k8s
+- v1.30.1
   tags:
+- v1.30.1
   - v0.1.3
+- v1.30.1
   - v0.2.1
+- v1.30.1
 # gardener-extension-provider-equinix-metal/charts/images.yaml
+- v1.30.1
 - source: equinix/cloud-provider-equinix-metal
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/equinix/cloud-provider-equinix-metal
+- v1.30.1
   tags:
+- v1.30.1
   - v3.5.0
+- v1.30.1
   - v3.6.0
+- v1.30.1
   - v3.6.1
+- v1.30.1
   - v3.6.2
+- v1.30.1
 - source: packethost/metabot
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/packethost/metabot
+- v1.30.1
   tags:
+- v1.30.1
   - v1.0.0
+- v1.30.1
 # gardener-extension-provider-openstack/charts/images.yaml
+- v1.30.1
 #
+- v1.30.1
 # DO NOT ADD NEW OPENSTACK IMAGES.
+- v1.30.1
 # With https://github.com/gardener/gardener-extension-provider-openstack/pull/593 GCR copy images are no longer used for the openstack-cloud-controller-manager and cinder-csi-plugin images.
+- v1.30.1
 - source: k8scloudprovider/openstack-cloud-controller-manager
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/k8scloudprovider/openstack-cloud-controller-manager
+- v1.30.1
   tags:
+- v1.30.1
   - v1.21.0
+- v1.30.1
   - v1.22.2
+- v1.30.1
   - v1.23.4
+- v1.30.1
 - source: k8scloudprovider/cinder-csi-plugin
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/k8scloudprovider/cinder-csi-plugin
+- v1.30.1
   tags:
+- v1.30.1
   - v1.20.3
+- v1.30.1
   - v1.21.0
+- v1.30.1
   - v1.22.2
+- v1.30.1
   - v1.23.4
+- v1.30.1
 # gardener-extension-registry-cache/charts/images.yaml
+- v1.30.1
 - source: registry
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/registry
+- v1.30.1
   tags:
+- v1.30.1
   - 2.8.1
+- v1.30.1
   - 2.8.2
+- v1.30.1
   - 2.8.3
+- v1.30.1
   - 3.0.0-alpha.1
+- v1.30.1
 # gardener-extension-registry-cache/test/e2e
+- v1.30.1
 - source: nginx
+- v1.30.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/nginx
+- v1.30.1
   tags:
+- v1.30.1
   - 1.17.6
