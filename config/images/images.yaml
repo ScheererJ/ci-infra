@@ -23,10 +23,6 @@ images:
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubernetesui/metrics-scraper
   tags:
   - v1.0.7
-- source: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy
-  destination: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy-target
-  tags:
-  - "v0.15.0"
 - source: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack
   destination: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack-target
   tags:
@@ -82,10 +78,10 @@ images:
   tags:
   - 2.2.1
   tag: "1.21.3-distroless"
-- source: registry.k8s.io/cpa/cluster-proportional-autoscaler
-  destination: europe-docker.pkg.dev/gardener-project/releases/3rd/cpa
+- source: registry.k8s.io/autoscaling/vpa-updater
+  destination: europe-docker.pkg.dev/gardener-project/releases/3rd/vpa
   tags:
-  - v1.8.8
+  - 1.1.1
 - source: envoyproxy/envoy-distroless
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
   tags:
