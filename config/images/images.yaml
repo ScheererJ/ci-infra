@@ -65,7 +65,7 @@ images:
 - source: grafana/loki
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/loki
   tags:
-  - 2.2.1
+  - 2.9.8
 # DO NOT ADD NEW PROMTAIL IMAGES.
 # With https://github.com/gardener/gardener/pull/7318 promtail is replaced by valitail.
 - source: grafana/promtail
