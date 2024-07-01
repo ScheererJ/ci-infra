@@ -82,8 +82,8 @@ images:
   tags:
   - 2.2.1
   tag: "1.21.3-distroless"
-- source: gcr.io/istio-release/proxyv2
-  destination: europe-docker.pkg.dev/gardener-project/releases/3rd/istio/proxyv2
+- source: gcr.io/istio-release/pilot
+  destination: europe-docker.pkg.dev/gardener-project/releases/3rd/istio/pilot
   tags:
   - 1.21.0-distroless
   - 1.21.1-distroless
