@@ -82,6 +82,7 @@ images:
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/vpa
   tags:
   - 1.1.1
+  - 1.1.2
 - source: envoyproxy/envoy-distroless
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
   tags:
