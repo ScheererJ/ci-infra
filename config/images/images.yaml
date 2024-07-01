@@ -85,7 +85,7 @@ images:
 - source: registry.k8s.io/cpa/cluster-proportional-autoscaler
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/cpa
   tags:
-  - v1.8.8
+  - v1.8.9
 - source: envoyproxy/envoy-distroless
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
   tags:
