@@ -202,4 +202,4 @@ images:
 - source: nginx
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/nginx
   tags:
-  - 1.17.6
+  - 1.17.10
