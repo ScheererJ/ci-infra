@@ -35,7 +35,7 @@ images:
 - source: fluent/fluent-bit
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent/fluent-bit
   tags:
-  - 1.9.7
+  - 1.9.10
 - source: kubesphere/fluent-bit # A custom Fluent Bit image `kubesphere/fluent-bit` is required to work with FluentBit Operator for dynamic configuration reloading, ref: https://github.com/fluent/fluent-operator#fluent-bit
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubesphere/fluent-bit
   tags:
