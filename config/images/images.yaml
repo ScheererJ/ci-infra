@@ -82,11 +82,10 @@ images:
   tags:
   - 2.2.1
   tag: "1.21.3-distroless"
-- source: gcr.io/istio-release/pilot
-  destination: europe-docker.pkg.dev/gardener-project/releases/3rd/istio/pilot
+- source: registry.k8s.io/cpa/cluster-proportional-autoscaler
+  destination: europe-docker.pkg.dev/gardener-project/releases/3rd/cpa
   tags:
-  - 1.21.0-distroless
-  - 1.21.1-distroless
+  - v1.8.8
 - source: envoyproxy/envoy-distroless
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
   tags:
