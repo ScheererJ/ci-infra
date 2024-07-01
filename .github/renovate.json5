@@ -127,7 +127,7 @@
       "matchFileNames": ["config/images/images.yaml"],
       "postUpgradeTasks": {
         "commands": [
-          "bash -c \"DEPNAME={{{depName}}} yq '(.images[] | select(.source == strenv(DEPNAME)) | key) config/images/images.yaml >> output; yq '(.images[4].tags | length)' config/images/images.yaml >> output; yq '.images[4].tags[1] | line' config/images/images.yaml >> output; echo sed -i $LINE'i\      - {{{currentVersion}}}' config/images/images.yaml >> output\"",
+          "bash -c \"DEPNAME={{{depName}}} yq '(.images[] | select(.source == strenv(DEPNAME)) | key)' config/images/images.yaml >> output; yq '(.images[4].tags | length)' config/images/images.yaml >> output; yq '.images[4].tags[1] | line' config/images/images.yaml >> output; echo sed -i $LINE'i\      - {{{currentVersion}}}' config/images/images.yaml >> output\"",
         ],
         "executionMode": "update"
       }
