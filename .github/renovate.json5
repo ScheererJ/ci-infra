@@ -127,8 +127,7 @@
       "matchFileNames": ["config/images/images.yaml"],
       "postUpgradeTasks": {
         "commands": [
-          "bash -c export >> output",
-          "bash -c 'echo depName={{{depName}}} currentVersion={{{currentVersion}}} newVersion={{{newVersion}}} >> output'",
+          "yq -i '(.images[] | select(.source == \"{{{depName}}}\") | key) as $imagePos | (.images[$imagePos].tags | length) as $tagLength | .images[$imagePos].tags[$tagLength - 1] = \"{{{currentVersion}}}\" | .images[$imagePos].tags[$tagLength] = \"{{{newVersion}}}\"' config/images/images.yaml",
         ],
         "executionMode": "update"
       }
