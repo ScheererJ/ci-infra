@@ -1,220 +1,440 @@
+- 1.21.1
 images:
+- 1.21.1
 # gardener/imagevector/images.yaml
+- 1.21.1
 #
+- 1.21.1
 # DO NOT ADD NEW GRAFANA IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener/pull/7318 grafana is replaced by plutono.
+- 1.21.1
 - source: grafana/grafana
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/grafana
+- 1.21.1
   tags:
+- 1.21.1
   - 7.5.17
+- 1.21.1
 # DO NOT ADD NEW COREDNS IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener/pull/8192 a GCR copy image is no longer used for coredns.
+- 1.21.1
 - source: coredns/coredns
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/coredns/coredns
+- 1.21.1
   tags:
+- 1.21.1
   - 1.10.0
+- 1.21.1
 - source: kubernetesui/dashboard
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubernetesui/dashboard
+- 1.21.1
   tags:
+- 1.21.1
   - v2.2.0
+- 1.21.1
   - v2.4.0
+- 1.21.1
   - v2.5.1
+- 1.21.1
 - source: kubernetesui/metrics-scraper
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubernetesui/metrics-scraper
+- 1.21.1
   tags:
+- 1.21.1
   - v1.0.7
+- 1.21.1
 - source: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy-target
+- 1.21.1
   tags:
+- 1.21.1
   - "v0.15.0"
+- 1.21.1
 - source: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack-target
+- 1.21.1
   tags:
+- 1.21.1
   - 3.18.4
+- 1.21.1
   - 3.19.0
+- 1.21.1
 - source: alpine
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/alpine
+- 1.21.1
   tags:
+- 1.21.1
   - 3.15.4
+- 1.21.1
   - 3.15.8
+- 1.21.1
   - 3.18.4
+- 1.21.1
   - 3.19.1
+- 1.21.1
 # DO NOT ADD NEW FLUENT/FLUENT-BIT IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener/pull/7568 the fluent/fluent-bit image is replaced by kubesphere/fluent-bit.
+- 1.21.1
 - source: fluent/fluent-bit
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent/fluent-bit
+- 1.21.1
   tags:
+- 1.21.1
   - 1.9.7
+- 1.21.1
 - source: kubesphere/fluent-bit # A custom Fluent Bit image `kubesphere/fluent-bit` is required to work with FluentBit Operator for dynamic configuration reloading, ref: https://github.com/fluent/fluent-operator#fluent-bit
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubesphere/fluent-bit
+- 1.21.1
   tags:
+- 1.21.1
   - v2.0.9
+- 1.21.1
   - v2.0.10
+- 1.21.1
   - v2.1.4
+- 1.21.1
   - v2.2.0
+- 1.21.1
   - v2.2.2
+- 1.21.1
 - source: ghcr.io/fluent/fluent-operator/fluent-bit # A custom Fluent Bit image is required to work with FluentBit Operator for dynamic configuration reloading, ref: https://github.com/fluent/fluent-operator#fluent-bit It follows the switch in the upstream fluent-operator project. The kubsphere/fluent-bit image shall not be used anymore.
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent-operator/fluent-bit
+- 1.21.1
   tags:
+- 1.21.1
   - v3.0.7
+- 1.21.1
 - source: kubesphere/fluent-operator
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubesphere/fluent-operator
+- 1.21.1
   tags:
+- 1.21.1
   - v1.7.0
+- 1.21.1
   - v2.2.0
+- 1.21.1
   - v2.3.0
+- 1.21.1
   - v2.7.0
+- 1.21.1
 # It follows the switch in the upstream fluent-operator project. The kubsphere/fluent-operator image shall not be used anymore.
+- 1.21.1
 - source: ghcr.io/fluent/fluent-operator/fluent-operator
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent-operator/fluent-operator
+- 1.21.1
   tags:
+- 1.21.1
   - v2.9.0
+- 1.21.1
 # DO NOT ADD NEW LOKI IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener/pull/7318 loki is replaced by vali.
+- 1.21.1
 - source: grafana/loki
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/loki
+- 1.21.1
   tags:
+- 1.21.1
   - 2.2.1
+- 1.21.1
 # DO NOT ADD NEW PROMTAIL IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener/pull/7318 promtail is replaced by valitail.
+- 1.21.1
 - source: grafana/promtail
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/promtail
+- 1.21.1
   tags:
+- 1.21.1
   - 2.2.1
+- 1.21.1
   tag: "1.21.3-distroless"
+- 1.21.1
 - source: gcr.io/istio-release/proxyv2
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/istio/proxyv2
+- 1.21.1
   tags:
+- 1.21.1
   - 1.21.0-distroless
-  - 1.21.1-distroless
+- 1.21.1
+  - 1.22.2-distroless
+- 1.21.1
 - source: envoyproxy/envoy-distroless
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
+- 1.21.1
   tags:
+- 1.21.1
   - v1.24.1
+- 1.21.1
   - v1.26.4
+- 1.21.1
   - v1.26.7
+- 1.21.1
   - v1.29.2
+- 1.21.1
   - v1.29.3
+- 1.21.1
   - v1.30.1
+- 1.21.1
   - v1.30.2
+- 1.21.1
   - v1.30.3
+- 1.21.1
 - source: ghcr.io/credativ/vali
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/credativ/vali
+- 1.21.1
   tags:
+- 1.21.1
   - v2.2.13
+- 1.21.1
   - v2.2.14
+- 1.21.1
   - v2.2.15
+- 1.21.1
   - v2.2.16
+- 1.21.1
 - source: ghcr.io/credativ/valitail
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/credativ/valitail
+- 1.21.1
   tags:
+- 1.21.1
   - v2.2.13
+- 1.21.1
   - v2.2.14
+- 1.21.1
   - v2.2.15
+- 1.21.1
   - v2.2.16
+- 1.21.1
 - source: ghcr.io/credativ/plutono
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/credativ/plutono
+- 1.21.1
   tags:
+- 1.21.1
   - v7.5.28
+- 1.21.1
   - v7.5.29
+- 1.21.1
   - v7.5.30
+- 1.21.1
   - v7.5.31
+- 1.21.1
 # gardener/pkg/provider-local/images.yaml
+- 1.21.1
 - source: kindest/local-path-provisioner
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kindest/local-path-provisioner
+- 1.21.1
   tags:
+- 1.21.1
   - v0.0.22-kind.0
+- 1.21.1
 - source: kindest/local-path-helper
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kindest/local-path-helper
+- 1.21.1
   tags:
+- 1.21.1
   - v20220512-507ff70b
+- 1.21.1
 # gardener/test (Gardener integration tests)
+- 1.21.1
 - source: redis
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/redis
+- 1.21.1
   tags:
+- 1.21.1
   - 5.0.8
+- 1.21.1
 # gardener-extension-networking-calico/charts/images.yaml
+- 1.21.1
 #
+- 1.21.1
 # DO NOT ADD NEW CALICO IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener-extension-networking-calico/pull/275 GCR copy images are no longer used for the calico images.
+- 1.21.1
 - source: calico/node
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/node
+- 1.21.1
   tags:
+- 1.21.1
   - v3.25.1
+- 1.21.1
   - v3.25.0
+- 1.21.1
   - v3.22.2
+- 1.21.1
 - source: calico/cni
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/cni
+- 1.21.1
   tags:
+- 1.21.1
   - v3.25.1
+- 1.21.1
   - v3.25.0
+- 1.21.1
   - v3.22.2
+- 1.21.1
 - source: calico/typha
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/typha
+- 1.21.1
   tags:
+- 1.21.1
   - v3.25.1
+- 1.21.1
   - v3.25.0
+- 1.21.1
   - v3.22.2
+- 1.21.1
 - source: calico/kube-controllers
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/kube-controllers
+- 1.21.1
   tags:
+- 1.21.1
   - v3.25.1
+- 1.21.1
   - v3.25.0
+- 1.21.1
   - v3.22.2
+- 1.21.1
 - source: calico/pod2daemon-flexvol
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/pod2daemon-flexvol
+- 1.21.1
   tags:
+- 1.21.1
   - v3.22.2
+- 1.21.1
 # gardener-extension-provider-aws/imagevector/images.yaml
+- 1.21.1
 - source: public.ecr.aws/eks/aws-load-balancer-controller
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/eks/aws-load-balancer-controller
+- 1.21.1
   tags:
+- 1.21.1
   - v2.6.1
+- 1.21.1
   - v2.7.1
+- 1.21.1
 - source: public.ecr.aws/ebs-csi-driver/volume-modifier-for-k8s
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/ebs-csi-driver/volume-modifier-for-k8s
+- 1.21.1
   tags:
+- 1.21.1
   - v0.1.3
+- 1.21.1
   - v0.2.1
+- 1.21.1
 # gardener-extension-provider-equinix-metal/charts/images.yaml
+- 1.21.1
 - source: equinix/cloud-provider-equinix-metal
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/equinix/cloud-provider-equinix-metal
+- 1.21.1
   tags:
+- 1.21.1
   - v3.5.0
+- 1.21.1
   - v3.6.0
+- 1.21.1
   - v3.6.1
+- 1.21.1
   - v3.6.2
+- 1.21.1
 - source: packethost/metabot
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/packethost/metabot
+- 1.21.1
   tags:
+- 1.21.1
   - v1.0.0
+- 1.21.1
 # gardener-extension-provider-openstack/charts/images.yaml
+- 1.21.1
 #
+- 1.21.1
 # DO NOT ADD NEW OPENSTACK IMAGES.
+- 1.21.1
 # With https://github.com/gardener/gardener-extension-provider-openstack/pull/593 GCR copy images are no longer used for the openstack-cloud-controller-manager and cinder-csi-plugin images.
+- 1.21.1
 - source: k8scloudprovider/openstack-cloud-controller-manager
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/k8scloudprovider/openstack-cloud-controller-manager
+- 1.21.1
   tags:
+- 1.21.1
   - v1.21.0
+- 1.21.1
   - v1.22.2
+- 1.21.1
   - v1.23.4
+- 1.21.1
 - source: k8scloudprovider/cinder-csi-plugin
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/k8scloudprovider/cinder-csi-plugin
+- 1.21.1
   tags:
+- 1.21.1
   - v1.20.3
+- 1.21.1
   - v1.21.0
+- 1.21.1
   - v1.22.2
+- 1.21.1
   - v1.23.4
+- 1.21.1
 # gardener-extension-registry-cache/charts/images.yaml
+- 1.21.1
 - source: registry
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/registry
+- 1.21.1
   tags:
+- 1.21.1
   - 2.8.1
+- 1.21.1
   - 2.8.2
+- 1.21.1
   - 2.8.3
+- 1.21.1
   - 3.0.0-alpha.1
+- 1.21.1
 # gardener-extension-registry-cache/test/e2e
+- 1.21.1
 - source: nginx
+- 1.21.1
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/nginx
+- 1.21.1
   tags:
+- 1.21.1
   - 1.17.6
