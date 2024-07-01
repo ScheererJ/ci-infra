@@ -86,7 +86,7 @@ images:
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/istio/pilot
   tags:
   - 1.21.0-distroless
-  - 1.21.1-distroless
+  - 1.21.4-distroless
 - source: envoyproxy/envoy-distroless
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
   tags:
