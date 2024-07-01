@@ -71,7 +71,7 @@ images:
 - source: grafana/promtail
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/grafana/promtail
   tags:
-  - 2.2.1
+  - 2.9.8
 - source: envoyproxy/envoy-distroless
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/envoyproxy/envoy-distroless
   tags:
