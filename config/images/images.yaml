@@ -149,7 +149,7 @@ images:
 - source: calico/pod2daemon-flexvol
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/calico/pod2daemon-flexvol
   tags:
-  - v3.22.2
+  - v3.22.5
 # gardener-extension-provider-aws/imagevector/images.yaml
 - source: public.ecr.aws/eks/aws-load-balancer-controller
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/eks/aws-load-balancer-controller
