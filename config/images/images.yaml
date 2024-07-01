@@ -78,7 +78,7 @@ images:
   tags:
   - 2.2.1
   tag: "1.21.3-distroless"
-- source: registry.k8s.io/autoscaling/vpa-updater
+- source: registry.k8s.io/autoscaling/vpa-recommender
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/vpa
   tags:
   - 1.1.1
