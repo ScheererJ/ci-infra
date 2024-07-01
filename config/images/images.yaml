@@ -54,7 +54,7 @@ images:
   - v1.7.0
   - v2.2.0
   - v2.3.0
-  - v2.7.0
+  - v2.9.0
 # It follows the switch in the upstream fluent-operator project. The kubsphere/fluent-operator image shall not be used anymore.
 - source: ghcr.io/fluent/fluent-operator/fluent-operator
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/fluent-operator/fluent-operator
