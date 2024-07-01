@@ -23,10 +23,10 @@ images:
   destination: europe-docker.pkg.dev/gardener-project/releases/3rd/kubernetesui/metrics-scraper
   tags:
   - v1.0.7
-- source: eu.gcr.io/sap-se-gcr-k8s-public/eu_gcr_io/gardener-project/gardener/alpine-iptables
-  destination: eu.gcr.io/sap-se-gcr-k8s-public/eu_gcr_io/gardener-project/gardener/alpine-iptables-target
+- source: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy
+  destination: europe-docker.pkg.dev/gardener-project/releases/gardener/apiserver-proxy-target
   tags:
-  - 3.15.4-mod1
+  - "v0.15.0"
 - source: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack
   destination: europe-docker.pkg.dev/gardener-project/releases/gardener/alpine-conntrack-target
   tags:
